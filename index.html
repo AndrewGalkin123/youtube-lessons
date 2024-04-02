@@ -17,13 +17,16 @@
         <h3>Enter your expenses here: </h3>
         <div class="incoming-data">
             <input type="date">
-            <input type="text" placeholder="Your note">
-            <input type="text" placeholder="Amount spent">
-        </div>
-        <div class="expenses-list">
-            <h3>Your expenses: </h3>
+            <input class="note" type="text" placeholder="Your note">
+            <input class="amount" type="text" placeholder="Amount spent">
+            <input type="submit" value="Submit" onclick="submit()">
         </div>
       </div>
+      <div class="expenses-list">
+        <h3>Your expenses: </h3>
+        <br/>
+        <div class="expenses"></div>
+    </div>
     </main>
   </body>
 </html>

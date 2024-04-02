@@ -14,6 +14,11 @@ main {
     padding: 50px;
 }
 
+h3 {
+    font-weight: 400;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
 .description { 
     display: flex;
     flex-direction: column;
@@ -39,16 +44,41 @@ main {
     margin: 100px;
 }
 
-.form h3 { 
-    font-weight: 400;
-    font-family: "Roboto Condensed", sans-serif;
-}
 
 .incoming-data { 
     width: 800px;
     border: 1px solid grey;
+    display: flex;
 }
 
 .incoming-data input { 
+    width: 25%;
+}
+
+.expenses-list { 
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+.expense { 
+    width: 100%;
+    border: 1px solid grey;
+    display: flex;
+    margin: 5px;
+    
+}
+
+.info { 
     width: 33%;
+    overflow: scroll;
+    height: 100%;
+    
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.info:not(:first-child) { 
+    border-left: 1px solid grey; /* Добавляем правую границу */
 }
